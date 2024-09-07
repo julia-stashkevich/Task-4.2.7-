@@ -1,0 +1,54 @@
+/** @format */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #97caef;
+  color: #189bad;
+}
+#autocomplete-list {
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: white;
+}
+.autocomplete-item {
+  padding: 10px;
+  cursor: pointer;
+}
+.autocomplete-item:hover {
+  background-color: #f0f0f0;
+}
+.repo-list {
+  margin-top: 20px;
+}
+.repo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #189bad;
+  background-color: #cafafe;
+}
+.remove-button {
+  background: #e8a87c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.remove-button:hover {
+  background: #fc4445;
+}
+.repo-input {
+  width: 500px;
+  height: 50px;
+}
+.repo-input:checked {
+  border-color: #189bad;
+}
